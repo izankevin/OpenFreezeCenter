@@ -38,8 +38,11 @@ For Those running Linux Distro on MSI laptops. This is the Graphic User Interfac
 # .DEB package comming soon, till then delete previous versions of the application by deleting the directory and replacing it with the new release you download. Reinstall is not required and will be only done the first time automatically! thanks to # @Special-Niewbie
 
 # How To Install GUI app?
-- Download the .zip from the github and extract it wherever you want
-- Open terminal inside the extracted folder and run ```./at_startup.sh```
+- Download the .zip from the github and extract it wherever you want.
+- Open terminal inside the extracted folder and give the three .sh files sudo permissions with ```chmod +x root_permissions.sh``` , ```chmod +x install_deps.sh``` and ```chmod +x at_startup.sh```
+- Run the root permissions file ```./root_permissions.sh``` 
+- Install dependencies with ```./install_deps.sh```
+- Finally run ```./at_startup.sh```
 - This will install all the dependencies which are missing and open the GUI app for the first time.
 - App will create ```conf.txt``` file. it will contain all your configurations and fan curve values. deleting that file will reset all your fan curves.
 
